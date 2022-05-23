@@ -11,11 +11,18 @@ import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
 import SettingsApplicationsIcon from "@mui/icons-material/SettingsApplications";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import ExitToAppOutlinedIcon from "@mui/icons-material/ExitToAppOutlined";
+import { Link } from "react-router-dom";
+import { DarkModeContext } from "../../context/darkModeContext";
+import { useContext } from "react";
+
 const Sidebar = () => {
+  const { dispatch } = useContext(DarkModeContext);
   return (
     <div className="sidebar">
       <div className="top">
-        <span className="logo">lamadmin</span>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <span className="logo">lamadmin</span>
+        </Link>
       </div>
       <hr />
       <div className="center">
@@ -27,12 +34,16 @@ const Sidebar = () => {
           </li>
           <p className="title">LISTS</p>
           <li>
-            <PersonOutlineOutlinedIcon className="icon" />
-            <span>Users</span>
+            <Link to="/users" style={{ textDecoration: "none" }}>
+              <PersonOutlineOutlinedIcon className="icon" />
+              <span>Users</span>
+            </Link>
           </li>
           <li>
-            <Inventory2Icon className="icon" />
-            <span>Products</span>
+            <Link to="/products" style={{ textDecoration: "none" }}>
+              <Inventory2Icon className="icon" />
+              <span>Products</span>
+            </Link>
           </li>
           <li>
             <FilterFramesIcon className="icon" />
@@ -76,8 +87,14 @@ const Sidebar = () => {
         </ul>
       </div>
       <div className="bottom">
-        <div className="colorOption"></div>
-        <div className="colorOption"></div>
+        <div
+          className="colorOption"
+          onClick={() => dispatch({ type: "LIGHT" })}
+        ></div>
+        <div
+          className="colorOption"
+          onClick={() => dispatch({ type: "DARK" })}
+        ></div>
       </div>
     </div>
   );
