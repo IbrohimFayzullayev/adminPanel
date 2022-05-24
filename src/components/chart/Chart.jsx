@@ -52,3 +52,10 @@ const Chart = ({ aspect, title }) => {
 };
 
 export default Chart;
+
+// chaart yaratish uchun biz recharts kutibxonasidan foydalandik
+// kerakli narsalarni documentationdan bilib olishimiz mumkin boladi
+
+// aspect bu yerda chartni boyi bilan uzunligini taqsimlab berish uchun kerak boladi
+// ozgaruvchi qilib olganimiz biz bu ozgaruvchini ishlatmoqchi oage dan prop qilib
+// berib yuboramiz qancha kattalikda kerak bolsa ozimizga qulay qilib
