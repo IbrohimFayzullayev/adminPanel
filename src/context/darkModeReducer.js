@@ -18,3 +18,6 @@ const DarkModeReducer = (state, action) => {
 };
 
 export default DarkModeReducer;
+
+// bu reducer actionlarni turiga qarab qaysi action bajarilishini 
+// aniqlab beradi
