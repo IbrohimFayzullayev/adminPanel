@@ -42,3 +42,13 @@ function App() {
 }
 
 export default App;
+
+// App funksiyasiga barcha page lar ulangan boladi 
+//  barcha pagelar ni birlashtiradigan funksiya
+// keyin bu index faylga boradi
+
+// Yangi kutibxona react-reouter-dom 
+// bu bizga bitta sahifada koplab page larni yaratishga yordam beradi
+// slash qoyib osha page nomini yozsak shu page ga otiib ketadi
+// button ni bosish orqali biz shu page ga otishimiz mumkin boladi
+// har bir page Route orqali yaratiladi path bilan nomi yoziladi
