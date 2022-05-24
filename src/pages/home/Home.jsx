@@ -31,3 +31,6 @@ const Home = () => {
 };
 
 export default Home;
+
+// bu home page unga kerakli bolgan componentlar import qilingan
+// va kerakli joylarga tartib bilan qoyib chiqilgan holat
