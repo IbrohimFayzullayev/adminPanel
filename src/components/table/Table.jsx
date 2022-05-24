@@ -100,3 +100,5 @@ const List = () => {
 };
 
 export default List;
+
+// table yaratish uchun material.ui ning table bolimidan foydalandim
