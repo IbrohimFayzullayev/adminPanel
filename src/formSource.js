@@ -74,3 +74,6 @@ export const productInputs = [
     placeholder: "in stock",
   },
 ];
+
+// bu yerda ozimiz uchun ozgaruvchilar yaratiib olganmiz
+//  keyin bu ozgaruvchilarni hohlagan page da chaqirib ishlatishimiz mumkin boladi
