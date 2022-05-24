@@ -120,3 +120,6 @@ export const userRows = [
     age: 65,
   },
 ];
+
+// bu file ozimiz uchun database hisoblanadi undan foydalanishimiz mumkin
+// bu file da userlarni malumotlari joylashgan
