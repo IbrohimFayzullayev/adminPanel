@@ -11,3 +11,8 @@ root.render(
     </DarkModeContextProvider>
   </React.StrictMode>
 );
+
+// pages papkasida barcha page lar joylashgan
+
+// components da barcha componentlar joylashgan biz har bir componentni
+// hohlagan page ga borib ishlatishimiz mumkin boladi
